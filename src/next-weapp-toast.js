@@ -14,7 +14,7 @@
           wx.showToast(options);
         });
       },
-      dismiss: function() {
+      dismiss: function(inOptions) {
         return new Promise(function(resolve, reject) {
           var options = nx.mix(nxWxPromisify(resolve, reject), inOptions);
           wx.hideToast(options);
